@@ -13,9 +13,6 @@ function MyApp({Component, pageProps}) {
     return (
         <ViewportProvider>
             <div className="vh-100">
-                <head>
-                    <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css"/>
-                </head>
                 <Component {...pageProps} />
                 <Footer/>
             </div>
