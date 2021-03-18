@@ -49,7 +49,7 @@ const ContactForm = () => {
                     <Label>Message</Label>
                     <Input type="textarea" name="message" onChange={updateValues}/>
                 </FormGroup>
-                <Button type="submit" onClick={onSubmit}>Send</Button>
+                <Button type="button" onClick={onSubmit}>Send</Button>
             </Form>
         </Jumbotron>
     );
