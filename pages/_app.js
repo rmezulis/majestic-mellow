@@ -7,14 +7,19 @@ import '../styles/template/normalize.css';
 import '../styles/template/responsive.css';
 import '../styles/template/style.css';
 import '../styles/styles.css';
-import Header from "../components/Layout/Header";
+import ViewportProvider from "../components/Viewport/Viewport";
 
 function MyApp({Component, pageProps}) {
     return (
-        <div className="vh-100">
-            <Component {...pageProps} />
-            <Footer/>
-        </div>
+        <ViewportProvider>
+            <div className="vh-100">
+                <head>
+                    <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css"/>
+                </head>
+                <Component {...pageProps} />
+                <Footer/>
+            </div>
+        </ViewportProvider>
     )
 }
 

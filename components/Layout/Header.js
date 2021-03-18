@@ -1,25 +1,30 @@
+import React, {useState} from "react";
+import classNames from 'classnames';
+import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
 import Link from '../Link';
-import {Collapse, Nav, Navbar, NavbarBrand, NavItem} from "reactstrap";
+import useViewport from "../Viewport/useViewport";
 
 const Header = ({className}) => {
+    const mobile = 910 >= useViewport().width;
+    const [open, setOpen] = useState(!mobile)
     if (!className) {
         className = "header_section container-fluid"
     }
 
     return (
         <div className={className}>
-            <Navbar className="vh-10">
-                <div className="col-md-4">
+            <Navbar className={classNames({'mobile-header': mobile && open})}>
+                <div className="col-lg-4">
                     <NavbarBrand className="navbar-brand" href="">LV* Majestic Mellow</NavbarBrand>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                    {mobile && <NavbarToggler className={classNames("container-hamburger float-right", {change: open})} onClick={() => setOpen(!open)}>
+                            <div className="bar1"></div>
+                            <div className="bar2"></div>
+                            <div className="bar3"></div>
+                    </NavbarToggler>}
                 </div>
-                <div className="col-md-8">
-                    <Collapse isOpen={true} navbar>
-                        <Nav className="mr-auto">
+                <div className="col-lg-8">
+                    <Collapse isOpen={open} navbar>
+                        <Nav className="mr-auto navbar-items">
                             <NavItem>
                                 <Link href="/">
                                     <a className="menu-item">Home</a>
