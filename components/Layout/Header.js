@@ -12,7 +12,7 @@ const Header = ({className}) => {
     }
 
     return (
-        <div className={className}>
+        <div className={classNames(className, {'p-0': mobile && open})}>
             <Navbar className={classNames({'mobile-header': mobile && open})}>
                 <div className="col-lg-4">
                     <NavbarBrand className="navbar-brand" href="">LV* Majestic Mellow</NavbarBrand>
