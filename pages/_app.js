@@ -11,19 +11,12 @@ import ViewportProvider from "../components/Viewport/Viewport";
 
 function MyApp({Component, pageProps}) {
     return (
-        <>
-            <ViewportProvider>
-                <div className="vh-100">
-                    <Component {...pageProps} />
-                    <Footer/>
-                </div>
-            </ViewportProvider>
-            <script src="/__/firebase/8.3.1/firebase-app.js"></script>
-
-            <script src="/__/firebase/8.3.1/firebase-analytics.js"></script>
-
-            <script src="/__/firebase/init.js"></script>
-        </>
+        <ViewportProvider>
+            <div className="vh-100">
+                <Component {...pageProps} />
+                <Footer/>
+            </div>
+        </ViewportProvider>
     )
 }
 
