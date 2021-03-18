@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url("https://use.typekit.net/jln4qdn.css");
+
+body {
+    font-family: sloop-script-one, sans-serif;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    min-height: 100%;
+}
+
+a {
+    color: unset;
+}
+
+.menu-item {
+    border-bottom: #a8a8a8 solid 2px;
+    border-top: #a8a8a8 solid 2px;
+    color: #d5d5d5;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    font-size: 2.1rem;
+}
+
+.menu-item:hover {
+    color: #7d7d7d;
+}
+
+.selected {
+    color: #393939;
+    border-color: #393939;
+    pointer-events: none;
+}
+
+.header-back {
+    background-color: #343e85;
+}
+
+.vh-10 {
+    height: 10vh;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+.home-header {
+    background-image: url(/images/2O8A0041.jpg);
+    background-size: cover;
+    background-position: center;
+}
