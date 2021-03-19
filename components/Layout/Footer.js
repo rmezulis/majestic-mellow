@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Image from 'next/image'
+import menuMessages from "../../messages/defined-messages/menu";
+import {FormattedMessage} from "react-intl";
+import React from "react";
 
 const Footer = () => {
     return (
@@ -8,25 +11,25 @@ const Footer = () => {
                 <div className="footer_section_2">
                     <div className="row justify-content-around">
                                 <Link href="/">
-                                    <a>Home</a>
+                                    <a><FormattedMessage {...menuMessages.home}/></a>
                                 </Link>
                                 <Link href="/breed">
-                                    <a>The Breed</a>
+                                    <a><FormattedMessage {...menuMessages.breed}/></a>
                                 </Link>
                                 <Link href="/our-cats">
-                                    <a>Our Cats</a>
+                                    <a><FormattedMessage {...menuMessages.ourCats}/></a>
                                 </Link>
                                 <Link href="/kittens">
-                                    <a>Kittens</a>
+                                    <a><FormattedMessage {...menuMessages.kittens}/></a>
                                 </Link>
                                 <Link href="/links">
-                                    <a>Links</a>
+                                    <a><FormattedMessage {...menuMessages.links}/></a>
                                 </Link>
                                 <Link href="/about-us">
-                                    <a>About us</a>
+                                    <a><FormattedMessage {...menuMessages.aboutUs}/></a>
                                 </Link>
                                 <Link href="/contacts">
-                                    <a>Contacts</a>
+                                    <a><FormattedMessage {...menuMessages.contacts}/></a>
                                 </Link>
                     </div>
                 </div>

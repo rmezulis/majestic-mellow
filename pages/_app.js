@@ -8,15 +8,31 @@ import '../styles/template/responsive.css';
 import '../styles/template/style.css';
 import '../styles/styles.css';
 import ViewportProvider from "../components/Viewport/Viewport";
+import {IntlProvider} from "react-intl";
+import {useRouter} from "next/router";
+import Latvian from "../messages/lv.json";
+import English from "../messages/en.json";
 
 function MyApp({Component, pageProps}) {
+    const {locale} = useRouter();
+    let messages;
+    switch (locale){
+        case 'lv':
+            messages = Latvian;
+            break;
+        default:
+            messages = English;
+            break;
+    }
     return (
+        <IntlProvider messages={messages} locale={locale}>
         <ViewportProvider>
             <div className="vh-100">
                 <Component {...pageProps} />
                 <Footer/>
             </div>
         </ViewportProvider>
+        </IntlProvider>
     )
 }
 
