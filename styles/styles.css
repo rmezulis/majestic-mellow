@@ -10,7 +10,7 @@ body {
     min-width: 360px;
     width: auto !important;
 }
-h1 {
+h1, h2, h3 {
     font-family: sloop-script-one, sans-serif;
 }
 
@@ -93,7 +93,8 @@ a {
 }
 
 .mobile-header {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     transform-origin: top;
     background: rgb(79,90,156);
@@ -128,4 +129,13 @@ a {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.cat-image{
+    min-height: 300px;
+    width: auto;
+}
+
+.active {
+    background: none;
 }

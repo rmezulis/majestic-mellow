@@ -17,6 +17,11 @@ const Header = () => {
     if (router.pathname === '/') {
         className = "home-header vh-100 container-fluid"
     }
+    const close = () => {
+        if (mobile) {
+            setOpen(false)
+        }
+    };
     const locale = router.locale === 'en' ? 'lv' : "en";
     const image = router.locale === 'en' ? '/flags/Latvia.png' : '/flags/UK.png'
 
@@ -37,42 +42,46 @@ const Header = () => {
                         <Nav className="mr-auto navbar-items">
                             <NavItem>
                                 <CustomLink href="/">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.home}/></a>
+                                    <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.home}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/breed">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.breed}/></a>
+                                    <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.breed}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/our-cats">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.ourCats}/></a>
+                                    <a className="menu-item"
+                                       onClick={close}><FormattedMessage {...menuMessages.ourCats}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/kittens">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.kittens}/></a>
+                                    <a className="menu-item"
+                                       onClick={close}><FormattedMessage {...menuMessages.kittens}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/links">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.links}/></a>
+                                    <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.links}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/about-us">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.aboutUs}/></a>
+                                    <a className="menu-item"
+                                       onClick={close}><FormattedMessage {...menuMessages.aboutUs}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/contacts">
-                                    <a className="menu-item"><FormattedMessage {...menuMessages.contacts}/></a>
+                                    <a className="menu-item"
+                                       onClick={close}><FormattedMessage {...menuMessages.contacts}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
                                 <Link href={router.pathname} locale={locale}>
-                                    <a><Image width="35px" height="35px" src={image}/></a>
+                                    <a onClick={close}><Image width="35px" height="35px" src={image}/></a>
                                 </Link>
                             </NavItem>
                         </Nav>
