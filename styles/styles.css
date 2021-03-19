@@ -24,7 +24,7 @@ a {
     color: #d5d5d5;
     margin: 10px 10px;
     padding: 5px 10px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .menu-item:hover {
@@ -51,13 +51,13 @@ a {
 
 .home-header {
     background-image: url(/images/2O8A0041.jpg);
-    background-size: cover;
+    background-size: auto 100%;
     background-position: top;
 }
 
 @media (max-width:1390px) {
     .menu-item {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -68,7 +68,7 @@ a {
     }
 }
 
-@media (max-width:910px) {
+@media (max-width:990px) {
     .navbar-items {
         display: inline;
         z-index: 2;
@@ -76,11 +76,7 @@ a {
     }
     .menu-item {
         font-size: 6.5vw;
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
         max-height: 7vh;
-    }
-    .selected {
-        text-shadow: none;
     }
     .container-fluid.change {
         overflow: hidden;

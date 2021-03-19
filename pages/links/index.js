@@ -8,7 +8,6 @@ const Links = () => {
             <NextHead>
                 <title>Links - Majestic Mellow</title>
             </NextHead>
-            <Header/>
         </div>
     );
 }

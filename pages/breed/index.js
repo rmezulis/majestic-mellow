@@ -8,7 +8,6 @@ const Breed = () => {
             <NextHead>
                 <title>The Breed - Majestic Mellow</title>
             </NextHead>
-            <Header/>
         </div>
     );
 }

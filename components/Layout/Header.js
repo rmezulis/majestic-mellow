@@ -2,22 +2,24 @@ import React, {useState} from "react";
 import classNames from 'classnames';
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
 import {FormattedMessage} from "react-intl";
-import Link from "next/router";
+import Link from "next/link";
 import CustomLink from '../Link';
 import useViewport from "../Viewport/useViewport";
 import menuMessages from "../../messages/defined-messages/menu";
 import {useRouter} from "next/router";
 import Image from "next/image";
 
-const Header = ({className}) => {
+const Header = () => {
     const router = useRouter();
-    const mobile = 910 >= useViewport().width;
+    const mobile = 990 >= useViewport().width;
     const [open, setOpen] = useState(!mobile)
-    if (!className) {
-        className = "header_section container-fluid"
+    let className = "header_section container-fluid";
+    if (router.pathname === '/') {
+        className = "home-header vh-100 container-fluid"
     }
     const locale = router.locale === 'en' ? 'lv' : "en";
-    console.log(router.pathname, locale)
+    const image = router.locale === 'en' ? '/flags/Latvia.png' : '/flags/UK.png'
+
     return (
         <div className={classNames(className, {'p-0': mobile && open})}>
             <Navbar className={classNames({'mobile-header': mobile && open})}>
@@ -68,11 +70,11 @@ const Header = ({className}) => {
                                     <a className="menu-item"><FormattedMessage {...menuMessages.contacts}/></a>
                                 </CustomLink>
                             </NavItem>
-                            {/*<NavItem>*/}
-                            {/*    <Link href={router.pathname}>*/}
-                            {/*        <a>wtf</a>*/}
-                            {/*    </Link>*/}
-                            {/*</NavItem>*/}
+                            <NavItem>
+                                <Link href={router.pathname} locale={locale}>
+                                    <a><Image width="35px" height="35px" src={image}/></a>
+                                </Link>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </div>

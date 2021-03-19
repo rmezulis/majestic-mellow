@@ -8,7 +8,6 @@ const AboutUs = () => {
             <NextHead>
                 <title>About Us - Majestic Mellow</title>
             </NextHead>
-            <Header/>
         </div>
     );
 }

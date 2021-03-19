@@ -3,6 +3,8 @@ import {Jumbotron} from "reactstrap";
 import NextHead from "next/head";
 import Header from "../../components/Layout/Header";
 import Form from "../../page-components/contacts/Form";
+import menuMessages from "../../messages/defined-messages/menu";
+import {FormattedMessage} from "react-intl";
 
 const Contacts = () => {
 
@@ -11,11 +13,10 @@ const Contacts = () => {
             <NextHead>
                 <title>Contacts - Majestic Mellow</title>
             </NextHead>
-            <Header/>
 
             <div className="container py-4">
                 <Jumbotron>
-                    <h1>Contacts</h1>
+                    <h1><FormattedMessage {...menuMessages.contacts}/></h1>
                     <strong>Email:</strong> evita_sproge@inbox.lv<br/>
                     <strong>Telephone:</strong> +37129417724
                 </Jumbotron>

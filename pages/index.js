@@ -10,9 +10,6 @@ const Home = () => {
             <NextHead>
                 <title>Majestic Mellow</title>
             </NextHead>
-            <div className="home-header vh-100">
-                <Header className="container-fluid"/>
-            </div>
 
             <AboutCats/>
 
