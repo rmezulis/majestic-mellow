@@ -67,7 +67,7 @@ const Gabrielle = () => {
             <strong>Birthday: </strong>25.05.2018
             <br/>
             <strong>Country: </strong>Italy
-            <Carousel next={next} previous={previous} activeIndex={activeIndex}>
+            <Carousel next={next} previous={previous} activeIndex={activeIndex} enableTouch={true}>
                 {items.map(item => <CarouselItem
                     onExiting={() => setAnimating(true)}
                     onExited={() => setAnimating(false)}

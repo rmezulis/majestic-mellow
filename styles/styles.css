@@ -138,4 +138,5 @@ a {
 
 .active {
     background: none;
+    width: auto;
 }
