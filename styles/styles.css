@@ -152,3 +152,7 @@ a {
     background: rgb(79, 90, 156);
     background: radial-gradient(circle, rgba(79, 90, 156, 1) 0%, rgba(52, 62, 133, 1) 50%, rgba(10, 19, 76, 1) 100%);
 }
+
+p{
+    color: white;
+}
