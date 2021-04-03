@@ -15,7 +15,7 @@ const Contacts = () => {
             </NextHead>
 
             <div className="container py-4">
-                <Jumbotron>
+                <Jumbotron className="bg-color">
                     <h1><FormattedMessage {...menuMessages.contacts}/></h1>
                     <strong>Email:</strong> evita_sproge@inbox.lv<br/>
                     <strong>Telephone:</strong> +37129417724

@@ -62,7 +62,7 @@ const Gabrielle = () => {
         setActiveIndex(nextIndex);
     }
     return (
-        <Jumbotron>
+        <Jumbotron className="bg-color">
             <h1>Gabrielle</h1>
             <strong>Birthday: </strong>25.05.2018
             <br/>

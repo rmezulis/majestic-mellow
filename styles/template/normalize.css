@@ -88,8 +88,8 @@ pre {
    ========================================================================== */
 
 /**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * 1. Remove the gray background on active legend in IE 10.
+ * 2. Remove gaps in legend underline in iOS 8+ and Safari 8+.
  */
 
 a {
@@ -206,7 +206,7 @@ audio:not([controls]) {
 }
 
 /**
- * Remove the border on images inside links in IE 10-.
+ * Remove the border on images inside legend in IE 10-.
  */
 
 img {

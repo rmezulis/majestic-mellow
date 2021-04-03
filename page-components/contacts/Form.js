@@ -30,7 +30,7 @@ const ContactForm = () => {
         )
     }
     return (
-        <Jumbotron>
+        <Jumbotron className="bg-color">
             <h1>Send us a message!</h1>
             <Form>
                 <FormGroup>

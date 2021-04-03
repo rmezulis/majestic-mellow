@@ -17,9 +17,9 @@ export default defineMessages({
         id: "menu.kittens",
         defaultMessage: "Kittens"
     },
-    links: {
-        id: "menu.links",
-        defaultMessage: "Links"
+    legend: {
+        id: "menu.legend",
+        defaultMessage: "Legend"
     },
     aboutUs: {
         id: "menu.about-us",

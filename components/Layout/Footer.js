@@ -22,8 +22,8 @@ const Footer = () => {
                         <Link href="/kittens">
                             <a><FormattedMessage {...menuMessages.kittens}/></a>
                         </Link>
-                        <Link href="/links">
-                            <a><FormattedMessage {...menuMessages.links}/></a>
+                        <Link href="/legend">
+                            <a><FormattedMessage {...menuMessages.legend}/></a>
                         </Link>
                         <Link href="/about-us">
                             <a><FormattedMessage {...menuMessages.aboutUs}/></a>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-sm-12">
                             <div className="icons text-center">
-                                <a href="https://www.instagram.com/gabrielle_secred_birman/" target="_blank">
+                                <a href="https://www.instagram.com/lv_majestic_mellow/" target="_blank">
                                     <Image width="20px" height="20px" src="/images/instagram.png"/>
                                 </a>
                             </div>

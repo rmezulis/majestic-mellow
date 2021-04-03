@@ -28,7 +28,7 @@ const Header = () => {
     return (
         <div className={classNames(className, {'p-0': mobile && open})}>
             <Navbar className={classNames({'mobile-header': mobile && open})}>
-                <div className="col-lg-4">
+                <div className="col-lg-3">
                     <NavbarBrand className="navbar-brand" href="">LV* Majestic Mellow</NavbarBrand>
                     {mobile && <NavbarToggler className={classNames("container-hamburger float-right", {change: open})}
                                               onClick={() => setOpen(!open)}>
@@ -37,7 +37,7 @@ const Header = () => {
                         <div className="bar3"></div>
                     </NavbarToggler>}
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-9">
                     <Collapse isOpen={open} navbar>
                         <Nav className="mr-auto navbar-items">
                             <NavItem>
@@ -63,8 +63,8 @@ const Header = () => {
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
-                                <CustomLink href="/links">
-                                    <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.links}/></a>
+                                <CustomLink href="/legend">
+                                    <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.legend}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
