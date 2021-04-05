@@ -79,11 +79,11 @@ const Header = () => {
                                        onClick={close}><FormattedMessage {...menuMessages.contacts}/></a>
                                 </CustomLink>
                             </NavItem>
-                            <NavItem>
-                                <Link href={router.pathname} locale={locale}>
-                                    <a onClick={close}><Image width="35px" height="35px" src={image}/></a>
-                                </Link>
-                            </NavItem>
+                            {/*<NavItem>*/}
+                            {/*    <Link href={router.pathname} locale={locale}>*/}
+                            {/*        <a onClick={close}><Image width="35px" height="35px" src={image}/></a>*/}
+                            {/*    </Link>*/}
+                            {/*</NavItem>*/}
                         </Nav>
                     </Collapse>
                 </div>

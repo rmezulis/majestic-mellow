@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Carousel, CarouselControl, CarouselItem, Jumbotron} from "reactstrap";
+import {Carousel, CarouselControl, CarouselItem, Col, Jumbotron, Row} from "reactstrap";
 import Image from "next/image";
 
 const items = [
@@ -64,22 +64,40 @@ const Gabrielle = () => {
     return (
         <Jumbotron className="bg-color">
             <h1>Gabrielle</h1>
-            <strong>Birthday: </strong>25.05.2018
-            <br/>
-            <strong>Country: </strong>Italy
-            <Carousel next={next} previous={previous} activeIndex={activeIndex} enableTouch={true}>
-                {items.map(item => <CarouselItem
-                    onExiting={() => setAnimating(true)}
-                    onExited={() => setAnimating(false)}
-                    key={item.src}
-                >
-                    <div className="cat-image" style={{background: "transparent"}}>
-                        <Image layout="fill" objectFit="contain" src={item.src}/>
-                    </div>
-                </CarouselItem>)}
-                <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
-                <CarouselControl direction="next" directionText="Next" onClickHandler={next}/>
-            </Carousel>
+            <Row>
+                <Col className="cat-text">
+                    <strong>IT* Sweety Yowl Gabrielle</strong>
+                    <br/>
+                    <strong>Gender:</strong> Female
+                    <br/>
+                    <strong>Color:</strong> SBIn Seal point
+                    <br/>
+                    <strong>Born:</strong> 25.05.2018.
+                    <br/>
+                    <strong>Father:</strong> SK*Simon Medicat SBIc
+                    <br/>
+                    <strong>Mother:</strong> IT* Sweety Yowl Freya SBIn
+                    <br/>
+                    <strong>Breeder:</strong> Milena Verdoliva IT*Sweety Yowl
+                    <br/>
+                    <strong>Owner:</strong> Evita Sproģe
+                </Col>
+                <Col>
+                    <Carousel next={next} previous={previous} activeIndex={activeIndex} enableTouch={true}>
+                        {items.map(item => <CarouselItem
+                            onExiting={() => setAnimating(true)}
+                            onExited={() => setAnimating(false)}
+                            key={item.src}
+                        >
+                            <div className="cat-image" style={{background: "transparent"}}>
+                                <Image layout="fill" objectFit="contain" src={item.src}/>
+                            </div>
+                        </CarouselItem>)}
+                        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
+                        <CarouselControl direction="next" directionText="Next" onClickHandler={next}/>
+                    </Carousel>
+                </Col>
+            </Row>
         </Jumbotron>
     );
 }
