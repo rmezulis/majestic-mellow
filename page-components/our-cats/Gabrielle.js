@@ -65,7 +65,7 @@ const Gabrielle = () => {
         <Jumbotron className="bg-color">
             <h1>Gabrielle</h1>
             <Row>
-                <Col className="cat-text">
+                <Col sm="12" lg="6" className="cat-text my-4">
                     <strong>IT* Sweety Yowl Gabrielle</strong>
                     <br/>
                     <strong>Gender:</strong> Female
@@ -82,7 +82,7 @@ const Gabrielle = () => {
                     <br/>
                     <strong>Owner:</strong> Evita Sproģe
                 </Col>
-                <Col>
+                <Col sm="12" lg="6" className="my-4">
                     <Carousel next={next} previous={previous} activeIndex={activeIndex} enableTouch={true}>
                         {items.map(item => <CarouselItem
                             onExiting={() => setAnimating(true)}
@@ -96,6 +96,16 @@ const Gabrielle = () => {
                         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
                         <CarouselControl direction="next" directionText="Next" onClickHandler={next}/>
                     </Carousel>
+                </Col>
+            </Row>
+            <Row>
+                <Col className="cat-text">
+                    Our treasure Birman cat mademoiselle Gabrielle is named
+                    after one of the most culturally influent women of her time,
+                    a prominent figure of luxury fashion, a French intelligence,
+                    an avant-garde woman, Gabrielle’’ Coco” Chanel. As her
+                    favorite color palette was: shades of beige, black and white,
+                    what perfectly is presented in SBIn seal point Birman cats.
                 </Col>
             </Row>
         </Jumbotron>

@@ -10,7 +10,7 @@ const Links = () => {
                 <title>Legend - Majestic Mellow</title>
             </NextHead>
             <Jumbotron className="bg-color">
-                <p>
+                <p className="cat-text">
                     Many centuries ago in a valley surrounded by majestic mountains, in the country of Burma in Asia,
                     the temple of Lao-Tsun was guarded by 100 white cats with
                     long silken hair. The temple housed a beautiful golden goddess with alluring sapphire blue eyes.
@@ -23,14 +23,14 @@ const Links = () => {
                     changed in this way. Sinh stayed with his master for the next seven days when he too died, carrying
                     the soul of his beloved master Mun-Ha to Paradise.
                 </p>
-                <p>
+                <p className="cat-text">
                     When the temple was raided again in 1919, Auguste Pavie and Major Gordon Russell helped the temple
                     priests. As a gesture of gratitude, the priests gave these men a breeding pair of Birmans.
                     Unfortunately, the male cat Maldapour died on the ocean voyage to France, but the female, Sita,
                     arrived in France pregnant with Maldapour’s offspring, and became the European foundation of the
                     Birman breed.
                 </p>
-                <p>
+                <p className="cat-text">
                     The Birman breed flourished, and in 1925 the Birmans was formally recognized in France FIFe. But by
                     the end of the Second World War, hardly any Birmans were left. It took many years to reestablish the
                     Birman breed and achieve it’s former glory. This was done thanks to devoted breeders and by the

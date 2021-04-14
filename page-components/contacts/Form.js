@@ -25,14 +25,14 @@ const ContactForm = () => {
     if (success) {
         return (
             <Jumbotron>
-                <p>Your message has been sent! We will get back to you as soon as possible!</p>
+                <p className="cat-text">Your message has been sent! We will get back to you as soon as possible!</p>
             </Jumbotron>
         )
     }
     return (
         <Jumbotron className="bg-color">
             <h1>Send us a message!</h1>
-            <Form>
+            <Form className="cat-text">
                 <FormGroup>
                     <Label>Name</Label>
                     <Input type="text" name="name" onChange={updateValues}/>
@@ -49,7 +49,7 @@ const ContactForm = () => {
                     <Label>Message</Label>
                     <Input type="textarea" name="message" onChange={updateValues}/>
                 </FormGroup>
-                <Button type="button" onClick={onSubmit}>Send</Button>
+                <Button type="button" className="btn float-right" outline color="primary" onClick={onSubmit}>Send</Button>
             </Form>
         </Jumbotron>
     );

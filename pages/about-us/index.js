@@ -10,15 +10,15 @@ const AboutUs = () => {
                 <title>About Us - Majestic Mellow</title>
             </NextHead>
             <Jumbotron className="bg-color">
-                <p>
+                <p className="cat-text">
                     LV* Majectic Mellow cattery has been established in March 2021 in Riga, Latvia. We are registered in
                     Fédération Internationale Féline (FIFe) and as well a member of Cat Fanciers Clubs Association
                     (CFCA).
                 </p>
-                <p>
+                <p className="cat-text">
                     Our cattery name LV*Majestic Mellow mirror the Birman cat royal beauty and divine sweet caracter.
                 </p>
-                <p>
+                <p className="cat-text">
                     Our treasure, Sacred Birman cat mademoiselle Gabrielle Sweety Yowll IT* arrived to our family in
                     2018, from sunny Italy * One look into her alluring sapphire blue eyes, and tru love story has
                     begin.

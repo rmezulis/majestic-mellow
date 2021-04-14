@@ -4,10 +4,13 @@ import {Col, Row} from "reactstrap";
 const AboutCats = () => {
     return (
         <div className="about_section">
-            <div className="about_text">
+            <div>
                 <div className="container">
-                    <h1 className="about_taital_1"><strong><span
-                        style={{color: '#343e85'}}>About</span> Cats</strong></h1>
+                    <h1>
+                        <strong>
+                            <span style={{color: '#343e85'}}>About</span> Cats
+                        </strong>
+                    </h1>
                     <Col>
                         <Row className="float-right">
                             <p className="magna_text">Sacred Birman cat…</p>

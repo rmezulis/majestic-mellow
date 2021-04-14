@@ -1,11 +1,10 @@
-import Header from "../../components/Layout/Header";
-import NextHead from "next/head";
 import React from "react";
+import NextHead from "next/head";
 import Gabrielle from "../../page-components/our-cats/Gabrielle";
 
 const OurCats = () => {
     return (
-        <div className="container py-4">
+        <div className="container py-4 bg-cover">
 
             <NextHead>
                 <title>Our Cats - Majestic Mellow</title>

@@ -11,15 +11,15 @@ const Kittens = () => {
             </NextHead>
             <Jumbotron className="bg-color">
                 <div>
-                    <p className="kitten-text">
+                    <p className="cat-text">
                         We are small family cattery. There may be only few kittens avaliable per year.
                     </p>
-                    <p className="kitten-text">
+                    <p className="cat-text">
                         All kittens will have FIFe pedigree, Eourpian Union veterianry passport, identification
                         microchip,
                         signed contract.
                     </p>
-                    <p className="kitten-text">
+                    <p className="cat-text">
                         Kittens to new homes could leave at the age of 14-16 weeks old. Fully vacinated against virus
                         diseases and rabies, checked by veterinarian, skillful to eat by themselves and use the litter
                         box.
@@ -28,7 +28,7 @@ const Kittens = () => {
                     </p>
 
 
-                    <p className="kitten-text">
+                    <p className="cat-text">
                         KITTENS comming to this world soon!!!
                     </p>
                 </div>

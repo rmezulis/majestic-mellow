@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {Jumbotron} from "reactstrap";
 import NextHead from "next/head";
-import Header from "../../components/Layout/Header";
 import Form from "../../page-components/contacts/Form";
 import menuMessages from "../../messages/defined-messages/menu";
 import {FormattedMessage} from "react-intl";
@@ -16,9 +15,11 @@ const Contacts = () => {
 
             <div className="container py-4">
                 <Jumbotron className="bg-color">
-                    <h1><FormattedMessage {...menuMessages.contacts}/></h1>
-                    <strong>Email:</strong> info@majestic-mellow.lv<br/>
-                    <strong>Telephone:</strong> +37129417724
+                    <div className="cat-text">
+                        <h1><FormattedMessage {...menuMessages.contacts}/></h1>
+                        <strong>Email:</strong> info@majestic-mellow.lv<br/>
+                        <strong>Telephone:</strong> +37129417724
+                    </div>
                 </Jumbotron>
                 <Form/>
 
