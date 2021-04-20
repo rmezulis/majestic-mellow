@@ -15,6 +15,10 @@ h1, h2, h3 {
     color: white;
 }
 
+h4{
+    font-size: 20px;
+}
+
 a {
     color: unset;
 }
@@ -34,8 +38,8 @@ a {
 }
 
 .selected {
-    color: #393939;
-    border-color: #393939;
+    color: #767676;
+    border-color: #767676;
     pointer-events: none;
 }
 
@@ -52,20 +56,20 @@ a {
 }
 
 .home-header {
-    background-image: url(/images/2O8A0041.jpg);
+    background-image: url(/images/background.jpg);
     background-size: auto 100%;
     background-position: top;
 }
 
 @media (max-width: 1390px) {
     .menu-item {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 1190px) {
     .menu-item {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
         max-height: 7vh;
     }
 }
@@ -78,8 +82,9 @@ a {
     }
 
     .menu-item {
-        font-size: 6.5vw;
+        font-size: 6.3vw;
         max-height: 7vh;
+        border: none;
     }
 
     .container-fluid.change {
@@ -165,4 +170,13 @@ p{
 
 .bg-cover{
     background-size: cover;
+}
+
+.kittens-parents-image{
+    max-width: 50%;
+}
+
+.site-logo{
+    min-width: 35vw;
+    height: 4vh;
 }

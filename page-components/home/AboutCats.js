@@ -8,19 +8,21 @@ const AboutCats = () => {
                 <div className="container">
                     <h1>
                         <strong>
-                            <span style={{color: '#343e85'}}>About</span> Cats
+                            <span style={{color: '#343e85'}}>About Us</span>
                         </strong>
                     </h1>
-                    <Col>
-                        <Row className="float-right">
+                    <Row className="ml-auto text-right">
+                        <Col>
                             <p className="magna_text">Sacred Birman cat…</p>
-                        </Row>
-                        <Row className="float-right">
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
                             <p className="magna_text">a cat of mystery and legend…</p>
-                        </Row>
-                    </Col>
+                        </Col>
+                    </Row>
                     <div className="about_bt">
-                        <Link href="/our-cats">
+                        <Link href="/about-us">
                             <button className="more_bt">Read More</button>
                         </Link>
                     </div>

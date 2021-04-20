@@ -1,7 +1,6 @@
-import Header from "../../components/Layout/Header";
-import NextHead from "next/head";
 import React from "react";
-import {Jumbotron} from "reactstrap";
+import NextHead from "next/head";
+import {Col, Jumbotron, Row} from "reactstrap";
 
 const Kittens = () => {
     return (
@@ -10,7 +9,8 @@ const Kittens = () => {
                 <title>Kittens - Majestic Mellow</title>
             </NextHead>
             <Jumbotron className="bg-color">
-                <div>
+                <h1>Kittens</h1>
+                <Row>
                     <p className="cat-text">
                         We are small family cattery. There may be only few kittens avaliable per year.
                     </p>
@@ -31,7 +31,26 @@ const Kittens = () => {
                     <p className="cat-text">
                         KITTENS comming to this world soon!!!
                     </p>
-                </div>
+                </Row>
+                <Row>
+                    <Col sm="12" lg="6" xl="6">
+                        <h4>Mother</h4>
+                        <img className="kittens-parents-image" src="/images/Gabriela/19.jpg"/>
+                        <p className="cat-text">IT* Sweety Yowl Gabrielle</p>
+                        <p className="cat-text">SBIn Seal point</p>
+                    </Col>
+                    <Col sm="12" lg="6" xl="6">
+                        <h4>Father</h4>
+                        <img className="kittens-parents-image" src="/images/father.png"/>
+                        <p className="cat-text">IT* Eric Clapton Pinetadeisongi</p>
+                        <p className="cat-text">SBIn Seal point</p>
+                    </Col>
+                </Row>
+                <Row>
+
+                    <p className="cat-text"> Both parents are with excelent breed standards.
+                        Coming from prestigious European lines.</p>
+                </Row>
             </Jumbotron>
         </div>
     );

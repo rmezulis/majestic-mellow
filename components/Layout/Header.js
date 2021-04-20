@@ -22,14 +22,18 @@ const Header = () => {
             setOpen(false)
         }
     };
-    const locale = router.locale === 'en' ? 'lv' : "en";
-    const image = router.locale === 'en' ? '/flags/Latvia.png' : '/flags/UK.png'
+    // const locale = router.locale === 'en' ? 'lv' : "en";
+    // const image = router.locale === 'en' ? '/flags/Latvia.png' : '/flags/UK.png'
 
     return (
         <div className={classNames(className, {'p-0': mobile && open})}>
             <Navbar className={classNames({'mobile-header': mobile && open})}>
                 <div className="col-lg-3">
-                    <NavbarBrand className="navbar-brand" href="">LV* Majestic Mellow</NavbarBrand>
+                    <NavbarBrand className="navbar-brand" href="/">
+                        <div className="site-logo">
+                            <Image layout="fill" objectFit="contain" src="/images/logo.png" quality="100"/>
+                        </div>
+                    </NavbarBrand>
                     {mobile && <NavbarToggler className={classNames("container-hamburger float-right", {change: open})}
                                               onClick={() => setOpen(!open)}>
                         <div className="bar1"></div>
@@ -43,6 +47,12 @@ const Header = () => {
                             <NavItem>
                                 <CustomLink href="/">
                                     <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.home}/></a>
+                                </CustomLink>
+                            </NavItem>
+                            <NavItem>
+                                <CustomLink href="/about-us">
+                                    <a className="menu-item"
+                                       onClick={close}><FormattedMessage {...menuMessages.aboutUs}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>
@@ -64,13 +74,8 @@ const Header = () => {
                             </NavItem>
                             <NavItem>
                                 <CustomLink href="/legend">
-                                    <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.legend}/></a>
-                                </CustomLink>
-                            </NavItem>
-                            <NavItem>
-                                <CustomLink href="/about-us">
                                     <a className="menu-item"
-                                       onClick={close}><FormattedMessage {...menuMessages.aboutUs}/></a>
+                                       onClick={close}><FormattedMessage {...menuMessages.legend}/></a>
                                 </CustomLink>
                             </NavItem>
                             <NavItem>

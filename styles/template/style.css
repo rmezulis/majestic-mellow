@@ -30,7 +30,6 @@ html {
 body {
     color: #666666;
     font-size: 14px;
-    font-family: 'Josefin Sans', sans-serif;;
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
@@ -54,12 +53,11 @@ h4,
 h5,
 h6 {
     letter-spacing: 0;
-    font-weight: normal;
+    font-weight: 500;
     position: relative;
     padding: 0 0 10px 0;
-    font-weight: normal;
     line-height: normal;
-    color: #111111;
+    color: #ffffff;
     margin: 0
 }
 
@@ -120,7 +118,7 @@ ol {
 
 p {
     margin: 20px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #110f0a;

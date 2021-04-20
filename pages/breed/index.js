@@ -12,6 +12,7 @@ const Breed = () => {
             </NextHead>
             <div>
                 <Jumbotron className="bg-color">
+                    <h1>Breed</h1>
                     <ul>
                         <li className="breed-text">
                             <FaPaw className="mx-2"/>The Birman breed is semi-longhaired breed, FIFe Standart Category II.

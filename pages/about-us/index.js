@@ -1,4 +1,3 @@
-import Header from "../../components/Layout/Header";
 import NextHead from "next/head";
 import React from "react";
 import {Jumbotron} from "reactstrap";
@@ -10,6 +9,7 @@ const AboutUs = () => {
                 <title>About Us - Majestic Mellow</title>
             </NextHead>
             <Jumbotron className="bg-color">
+                <h1>About Us</h1>
                 <p className="cat-text">
                     LV* Majectic Mellow cattery has been established in March 2021 in Riga, Latvia. We are registered in
                     Fédération Internationale Féline (FIFe) and as well a member of Cat Fanciers Clubs Association

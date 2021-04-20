@@ -13,6 +13,9 @@ const Footer = () => {
                         <Link href="/">
                             <a><FormattedMessage {...menuMessages.home}/></a>
                         </Link>
+                        <Link href="/about-us">
+                            <a><FormattedMessage {...menuMessages.aboutUs}/></a>
+                        </Link>
                         <Link href="/breed">
                             <a><FormattedMessage {...menuMessages.breed}/></a>
                         </Link>
@@ -24,9 +27,6 @@ const Footer = () => {
                         </Link>
                         <Link href="/legend">
                             <a><FormattedMessage {...menuMessages.legend}/></a>
-                        </Link>
-                        <Link href="/about-us">
-                            <a><FormattedMessage {...menuMessages.aboutUs}/></a>
                         </Link>
                         <Link href="/contacts">
                             <a><FormattedMessage {...menuMessages.contacts}/></a>

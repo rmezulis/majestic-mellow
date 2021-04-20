@@ -1,6 +1,5 @@
-import Header from "../../components/Layout/Header";
-import NextHead from "next/head";
 import React from "react";
+import NextHead from "next/head";
 import {Jumbotron} from "reactstrap";
 
 const Links = () => {
@@ -10,6 +9,7 @@ const Links = () => {
                 <title>Legend - Majestic Mellow</title>
             </NextHead>
             <Jumbotron className="bg-color">
+                <h1>Legend</h1>
                 <p className="cat-text">
                     Many centuries ago in a valley surrounded by majestic mountains, in the country of Burma in Asia,
                     the temple of Lao-Tsun was guarded by 100 white cats with
