@@ -60,6 +60,7 @@ const Gabrielle = () => {
                         {items.map(item => <CarouselItem key={item}>
                             <div className="cat-image" style={{background: "transparent"}}>
                                 <Image layout="fill" objectFit="contain" src={item}/>
+                                <div className="stamp"/>
                             </div>
                         </CarouselItem>)}
                         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>

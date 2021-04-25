@@ -42,8 +42,10 @@ const Kittens = () => {
                     </Col>
                     <Col sm="12" lg="6" xl="6">
                         <h4>Father</h4>
+                        <div>
                         <img className="kittens-parents-image" src="/images/father.png"/>
-                        <p className="cat-text">IT* Eric Clapton Pinetadeisongi</p>
+                        </div>
+                            <p className="cat-text">IT* Eric Clapton Pinetadeisongi</p>
                         <p className="cat-text">SBIn Seal point</p>
                     </Col>
                 </Row>

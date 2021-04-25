@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Carousel, CarouselControl, CarouselItem, Col, Row} from "reactstrap";
 import Image from "next/image";
 
-const Kitten = ({gender, color, images}) =>{
+const Kitten = ({gender, color, images}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const next = () => {
         const nextIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
@@ -35,6 +35,7 @@ const Kitten = ({gender, color, images}) =>{
                     {images.map(item => <CarouselItem key={item}>
                         <div className="cat-image" style={{background: "transparent"}}>
                             <Image layout="fill" objectFit="contain" src={item}/>
+                            <div className="stamp"/>
                         </div>
                     </CarouselItem>)}
                     <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>

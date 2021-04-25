@@ -142,8 +142,10 @@ a {
 }
 
 .cat-image {
+    position: relative;
     min-height: 300px;
     width: auto;
+    z-index: 1;
 }
 
 .active {
@@ -174,6 +176,7 @@ p{
 }
 
 .kittens-parents-image{
+    position: relative;
     max-width: 50%;
 }
 
@@ -185,4 +188,15 @@ p{
 .site-logo{
     min-width: 35vw;
     height: 20vh;
+}
+
+.stamp{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+z-index: 2;
+    background: url('../public/images/Stamp.png') no-repeat;
+    background-size: cover;
 }
