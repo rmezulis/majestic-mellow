@@ -13,10 +13,7 @@ const Header = () => {
     const router = useRouter();
     const mobile = 990 >= useViewport().width;
     const [open, setOpen] = useState(!mobile)
-    let className = "header_section container-fluid";
-    if (router.pathname === '/') {
-        className = "home-header vh-100 container-fluid"
-    }
+    const home = router.pathname === '/';
     const close = () => {
         if (mobile) {
             setOpen(false)
@@ -26,11 +23,11 @@ const Header = () => {
     // const image = router.locale === 'en' ? '/flags/Latvia.png' : '/flags/UK.png'
 
     return (
-        <div className={classNames(className, {'p-0': mobile && open})}>
-            <Navbar className={classNames({'mobile-header': mobile && open})}>
-                <div className="col-lg-3">
+        <div className={classNames({'p-0': mobile && open, 'container-fluid header_section vh-10': !home})}>
+            <Navbar className={classNames('p-0', {'mobile-header': mobile && open})}>
+                {!home && <div className="col-lg-3">
                     <NavbarBrand className="navbar-brand" href="/">
-                        <div className="site-logo">
+                        <div className="site-logo-mini">
                             <Image layout="fill" objectFit="contain" src="/images/logo.png" quality="100"/>
                         </div>
                     </NavbarBrand>
@@ -40,10 +37,13 @@ const Header = () => {
                         <div className="bar2"></div>
                         <div className="bar3"></div>
                     </NavbarToggler>}
-                </div>
-                <div className="col-lg-9">
+                </div>}
+                {home && <div className="col-lg-12 site-logo">
+                    <Image layout="fill" objectFit="contain" src="/images/logo.png"/>
+                </div>}
+                <div className={classNames({'col-lg-12 home-header': home, 'col-lg-9': !home})}>
                     <Collapse isOpen={open} navbar>
-                        <Nav className="mr-auto navbar-items">
+                        <Nav className={classNames("mr-auto navbar-items", {"container-fluid my-4 mx-5 p-0": home})} justified={home}>
                             <NavItem>
                                 <CustomLink href="/">
                                     <a className="menu-item" onClick={close}><FormattedMessage {...menuMessages.home}/></a>

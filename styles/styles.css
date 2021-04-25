@@ -48,7 +48,7 @@ a {
 }
 
 .vh-10 {
-    height: 10vh;
+    min-height: 10vh;
 }
 
 .vh-100 {
@@ -59,6 +59,7 @@ a {
     background-image: url(/images/background.jpg);
     background-size: auto 100%;
     background-position: top;
+    min-height: 80vh;
 }
 
 @media (max-width: 1390px) {
@@ -176,7 +177,12 @@ p{
     max-width: 50%;
 }
 
+.site-logo-small{
+    min-width: 35vw;
+    height: 6vh;
+}
+
 .site-logo{
     min-width: 35vw;
-    height: 4vh;
+    height: 20vh;
 }
