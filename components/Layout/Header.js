@@ -24,10 +24,10 @@ const Header = () => {
 
     return (
         <div className={classNames({'p-0': mobile && open, 'container-fluid header_section vh-10': !home})}>
-            <Navbar className={classNames('p-0', {'mobile-header': mobile && open})}>
+            <Navbar className={classNames({'mobile-header': mobile && open, 'p-0': home})}>
                 {!home && <div className="col-lg-3">
                     <NavbarBrand className="navbar-brand" href="/">
-                        <div className="site-logo-mini">
+                        <div className="site-logo-small">
                             <Image layout="fill" objectFit="contain" src="/images/logo.png" quality="100"/>
                         </div>
                     </NavbarBrand>

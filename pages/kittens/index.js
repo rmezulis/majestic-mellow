@@ -1,6 +1,7 @@
 import React from "react";
 import NextHead from "next/head";
 import {Col, Jumbotron, Row} from "reactstrap";
+import LitterA from "../../page-components/kittens/LitterA";
 
 const Kittens = () => {
     return (
@@ -51,6 +52,7 @@ const Kittens = () => {
                     <p className="cat-text"> Both parents are with excelent breed standards.
                         Coming from prestigious European lines.</p>
                 </Row>
+                <LitterA/>
             </Jumbotron>
         </div>
     );
