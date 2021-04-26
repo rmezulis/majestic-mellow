@@ -20,12 +20,12 @@ const AboutUs = () => {
                     (CFCA).
                 </p>
                 <p className="cat-text">
-                    Our cattery name LV*Majestic Mellow mirror the Birman cat royal beauty and divine sweet caracter.
+                    Our cattery name LV*Majestic Mellow mirror the Birman cat royal beauty and divine sweet character.
                 </p>
                 <p className="cat-text">
-                    Our treasure, Sacred Birman cat mademoiselle Gabrielle Sweety Yowll IT* arrived to our family in
-                    2018, from sunny Italy * One look into her alluring sapphire blue eyes, and tru love story has
-                    begin.
+                    Our treasure, Sacred Birman cat mademoiselle Gabrielle Sweety Yowl IT* arrived to our family in
+                    2018, from sunny Italy * One look into her alluring sapphire blue eyes, and a true love story
+                    began.
                 </p>
             </Jumbotron>
         </div>

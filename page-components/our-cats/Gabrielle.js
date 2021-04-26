@@ -71,9 +71,9 @@ const Gabrielle = () => {
             <Row>
                 <Col className="cat-text">
                     Our treasure Birman cat mademoiselle Gabrielle is named
-                    after one of the most culturally influent women of her time,
+                    after one of the most culturally influential women of her time,
                     a prominent figure of luxury fashion, a French intelligence,
-                    an avant-garde woman, Gabrielle’’ Coco” Chanel. As her
+                    an avant-garde woman, Gabrielle ”Coco” Chanel. As her
                     favorite color palette was: shades of beige, black and white,
                     what perfectly is presented in SBIn seal point Birman cats.
                 </Col>

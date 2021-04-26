@@ -16,7 +16,7 @@ const Kittens = () => {
                 <h1>Kittens</h1>
                 <Row>
                     <p className="cat-text">
-                        We are small family cattery. There may be only few kittens available per year.
+                        We are a small family cattery. There may only be few kittens available per year.
                     </p>
                     <p className="cat-text">
                         All kittens will have FIFe pedigree, European Union veterinary passport, identification
@@ -54,7 +54,7 @@ const Kittens = () => {
                 </Row>
                 <Row>
 
-                    <p className="cat-text"> Both parents are with excelent breed standards.
+                    <p className="cat-text"> Both parents are with excellent breed standards.
                         Coming from prestigious European lines.</p>
                 </Row>
                 <LitterA/>

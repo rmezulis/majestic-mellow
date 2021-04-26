@@ -17,7 +17,7 @@ const Breed = () => {
                     <h1>Breed</h1>
                     <ul>
                         <li className="breed-text">
-                            <FaPaw className="mx-2"/>The Birman breed is semi-longhaired breed, FIFe Standart Category II.
+                            <FaPaw className="mx-2"/>The Birman breed is a semi-long haired breed, FIFe Standard Category II.
                         </li>
                         <li className="breed-text">
                             <FaPaw className="mx-2"/>Birmans give the impression of a robust cat. They are medium in size.
@@ -56,13 +56,13 @@ const Breed = () => {
                         </li>
                         <li className="breed-text">
                             <FaPaw className="mx-2"/>The Birman’s charming masks come in a rainbow of colors: seal, blue, chocolate,
-                            lilac, red ,
+                            lilac, red,
                             cream and their respective tabby and torty color variants.
                         </li>
                         <li className="breed-text">
                             <FaPaw className="mx-2"/>The special feature of Birman cats are their white feet, called "gloves". The gloves
                             on the
-                            back paws, called "gauntlets", finish with in inverted "V".
+                            back paws, called "gauntlets", finish with an inverted "V".
                         </li>
                         <li className="breed-text">
                             <FaPaw className="mx-2"/>Birman cats are known as especially loving, gentle, affectionate and majestic breed.

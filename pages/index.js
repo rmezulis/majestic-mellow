@@ -1,6 +1,5 @@
 import React from "react";
 import NextHead from "next/head";
-import Header from "../components/Layout/Header";
 import AboutCats from "../page-components/home/AboutCats";
 import Kittens from "../page-components/home/Kittens";
 

@@ -35,7 +35,7 @@ const Links = () => {
                     Birman breed.
                 </p>
                 <p className="cat-text">
-                    The Birman breed flourished, and in 1925 the Birmans was formally recognized in France FIFe. But by
+                    The Birman breed flourished, and in 1925 the Birmans were formally recognized in France FIFe. But by
                     the end of the Second World War, hardly any Birmans were left. It took many years to reestablish the
                     Birman breed and achieve it’s former glory. This was done thanks to devoted breeders and by the
                     1960’s; Birmans were once again plentiful and explored around the world. Today Birman is one of the
