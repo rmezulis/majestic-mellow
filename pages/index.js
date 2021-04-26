@@ -9,6 +9,10 @@ const Home = () => {
         <div>
             <NextHead>
                 <title>Majestic Mellow</title>
+                <meta name="title" content="Sacred Birman Cattery - Majestic Mellow - majestic-mellow.lv"/>
+                <meta name="description" content="LV* Majectic Mellow cattery has been established in March 2021 in Riga, Latvia. We are registered in
+                    Fédération Internationale Féline (FIFe) and as well a member of Cat Fanciers Clubs Association
+                    (CFCA)."/>
             </NextHead>
 
             <AboutCats/>

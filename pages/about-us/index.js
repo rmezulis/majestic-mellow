@@ -7,6 +7,10 @@ const AboutUs = () => {
         <div className="container py-4">
             <NextHead>
                 <title>About Us - Majestic Mellow</title>
+                <meta name="title" content="About Us - Sacred Birman Cattery - Majestic Mellow"/>
+                <meta name="description" content="LV* Majectic Mellow cattery has been established in March 2021 in Riga, Latvia. We are registered in
+                    Fédération Internationale Féline (FIFe) and as well a member of Cat Fanciers Clubs Association
+                    (CFCA)."/>
             </NextHead>
             <Jumbotron className="bg-color">
                 <h1>About Us</h1>

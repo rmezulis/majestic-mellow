@@ -7,6 +7,10 @@ const Links = () => {
         <div className="container py-4">
             <NextHead>
                 <title>Legend - Majestic Mellow</title>
+                <meta name="title" content="Legend - Sacred Birman Cattery - Majestic Mellow"/>
+                <meta name="description" content="Many centuries ago in a valley surrounded by majestic mountains, in the country of Burma in Asia,
+                    the temple of Lao-Tsun was guarded by 100 white cats with
+                    long silken hair."/>
             </NextHead>
             <Jumbotron className="bg-color">
                 <h1>Legend</h1>

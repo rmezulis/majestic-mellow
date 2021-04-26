@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import {Carousel, CarouselControl, CarouselItem, Col, Row} from "reactstrap";
+import {Card, Carousel, CarouselControl, CarouselItem, Col, Row} from "reactstrap";
 import Image from "next/image";
 
-const Kitten = ({gender, color, images}) => {
+const Kitten = ({name, gender, color, images, text}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const next = () => {
         const nextIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
@@ -14,9 +14,10 @@ const Kitten = ({gender, color, images}) => {
         setActiveIndex(nextIndex);
     }
     return (
+        <Card className="kitten-card p-3 my-4">
         <Row>
             <Col sm="12" lg="6" className="cat-text my-4">
-                <strong>Kitten</strong>
+                <strong>LV*Majestic Mellow{' ' + name}</strong>
                 <br/>
                 <strong>Gender:</strong> {gender}
                 <br/>
@@ -43,6 +44,10 @@ const Kitten = ({gender, color, images}) => {
                 </Carousel>
             </Col>
         </Row>
+            <Row>
+                <div className="cat-text" dangerouslySetInnerHTML={{__html: text}}/>
+            </Row>
+        </Card>
     );
 }
 

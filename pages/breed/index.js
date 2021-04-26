@@ -9,6 +9,8 @@ const Breed = () => {
         <div className="container py-4">
             <NextHead>
                 <title>The Breed - Majestic Mellow</title>
+                <meta name="title" content="Breed - Sacred Birman Cattery - Majestic Mellow"/>
+                <meta name="description" content="The Birman breed is semi-longhaired breed, FIFe Standart Category II."/>
             </NextHead>
             <div>
                 <Jumbotron className="bg-color">

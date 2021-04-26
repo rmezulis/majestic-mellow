@@ -11,6 +11,8 @@ const Contacts = () => {
         <div>
             <NextHead>
                 <title>Contacts - Majestic Mellow</title>
+                <meta name="title" content="Contact us - Sacred Birman Cattery - Majestic Mellow"/>
+                <meta name="description" content="Send us a message to enquire about our available kittens!"/>
             </NextHead>
 
             <div className="container py-4">
