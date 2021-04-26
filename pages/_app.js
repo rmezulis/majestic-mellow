@@ -32,6 +32,7 @@ function MyApp({Component, pageProps}) {
                 <NextHead>
                     <link rel="icon" href="/favicon.ico" type="image/icon type"/>
                     <meta name="title" content="Latvian Sacred Birman Cattery - Majestic Mellow"/>
+                    <meta name="google-site-verification" content="x46u6yGhFsFZfKD12H2XV676VXcmUipkpRVBwIn5ozI" />
                 </NextHead>
                 <Header/>
                 <Component {...pageProps} />
